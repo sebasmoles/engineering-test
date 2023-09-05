@@ -1,0 +1,59 @@
+:root {
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+
+  box-sizing: border-box;
+
+  color: $text-color;
+  background-color: $background-color;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+// Inputs
+input {
+  height: $input-height;
+  border-radius: $input-border-radius;
+  border: $input-border;
+  background-color: $background-color;
+  color: $text-color;
+  font-size: $input-font-size;
+  padding-left: 25px;
+
+  &.input-icon {
+    padding-left: 42px;
+  }
+
+  &::placeholder {
+    color: $light-gray;
+  }
+
+  &:focus {
+    outline: none;
+    border: $input-border-focus;
+  }
+}
+// Anchors
+a {
+  color: $light-gray;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
