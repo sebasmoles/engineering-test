@@ -1,0 +1,33 @@
+#default-layout-content {
+  margin: 0 200px;
+  padding-top: 90px;
+
+  @include breakpoint-down(medium) {
+    margin: 0 5px;
+  }
+}
+#default-top-bar {
+  background-color: $dark-gray;
+  position: fixed;
+  padding: 0 20px;
+  height: 55px;
+  width: 100%;
+  border: none;
+  border-bottom: 0.1px solid $light-gray;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    cursor: pointer;
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+
+  .router-link-exact-active {
+    color: $primary-color;
+  }
+}

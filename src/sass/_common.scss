@@ -1,0 +1,41 @@
+// Width
+.w-full {
+  width: 100%;
+}
+// Positions
+.relative {
+  position: relative;
+}
+// Displays
+.flex {
+  display: flex;
+}
+// Flex
+.align-items {
+  &-center {
+    align-items: center;
+  }
+  &-baseline {
+    align-items: baseline;
+  }
+}
+.justify-content {
+  &-between {
+    justify-content: space-between;
+  }
+}
+// Utils
+.overflow {
+  &-hidden {
+    overflow: hidden;
+  }
+}
+.text-truncate {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+.text-center {
+  text-align: center;
+}

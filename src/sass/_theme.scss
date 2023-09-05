@@ -1,0 +1,17 @@
+// Font
+$base-font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif !default;
+$base-font-size: 18px !default;
+$base-font-weight: 400 !default;
+$base-line-height: 1.5 !default;
+// Colors
+$text-color: #e6e6e6 !default;
+$background-color: #010101 !default;
+$dark-gray: #27292d !default;
+$light-gray: #d3d3d3 !default;
+$primary-color: #cddd39 !default;
+// Inputs
+$input-height: 45px !default;
+$input-border: 1px solid $light-gray !default;
+$input-border-focus: 1px solid $primary-color !default;
+$input-border-radius: 20px !default;
+$input-font-size: 0.9rem !default;
