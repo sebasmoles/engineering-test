@@ -5,7 +5,7 @@
         v-for="(item, i) in items"
         :key="i"
         :item="item"
-        @editar="(item) => $emit('editar', item)"
+        @click="redirectToGenome(item)"
       />
     </template>
     <template v-else>
@@ -33,6 +33,14 @@
     computed: {
       thereAreItems() {
         return this.items?.length > 0;
+      },
+      URLTorre() {
+        return import.meta.env?.VITE_TORRE_URL ?? location.origin;
+      },
+    },
+    methods: {
+      redirectToGenome(item) {
+        open(`${this.URLTorre}/${item.username}`, "_blank");
       },
     },
   };
