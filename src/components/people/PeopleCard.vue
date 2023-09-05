@@ -2,7 +2,7 @@
   <article class="people-card">
     <div>
       <img
-        :src="item?.picture || 'src/assets/user-placeholder.png'"
+        :src="item?.picture || placeholder"
         alt="Profile picture"
         style="height: 50px; border-radius: 50%"
       />
@@ -44,6 +44,7 @@
 </template>
 
 <script>
+  import placeholder from "@/assets/user-placeholder.png";
   export default {
     props: {
       item: {
@@ -51,6 +52,9 @@
         default: () => ({}),
       },
     },
+    setup: () => ({
+      placeholder,
+    }),
   };
 </script>
 
