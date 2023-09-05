@@ -1,1 +1,0 @@
-import{_ as o,o as t,c as s,a as e}from"./index-9285caef.js";const c={},n={class:"w-full text-center"},_=e("h3",null,"Oops!",-1),r=e("h3",null,"404 Error - Page not found",-1),a=[_,r];function l(d,i){return t(),s("section",n,a)}const u=o(c,[["render",l]]);export{u as default};
